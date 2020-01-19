@@ -1,7 +1,7 @@
 //style for a particular show in home page
-.homeList {
+.Home-list {
     @include flexCenter(row, flex-start, space-evenly);
     flex-wrap: wrap;
-    text-align: $textAlignCenter;
+    text-align: center;
   }
   @import './mixins';

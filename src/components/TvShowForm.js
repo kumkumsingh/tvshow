@@ -14,7 +14,7 @@ export default function TvShowForm(props) {
     return (
       <div>
         <h2>{name}</h2>
-        <section className="showDetail">
+        <section className="Show-detail">
           <img src={medium} alt="Not available"></img>
           <article>{summaryContent}</article>
         </section>

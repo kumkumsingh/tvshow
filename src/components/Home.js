@@ -7,7 +7,7 @@ export default class Home extends Component {
     return (
       <div>
         <h2>List Of TVMaze show</h2>
-        <div className="homeList">
+        <div className="Home-list">
         {shows.map(show => {
           return (
             <div key={show.id}>

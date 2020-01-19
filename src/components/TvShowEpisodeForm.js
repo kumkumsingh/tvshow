@@ -5,13 +5,16 @@ import moment from "moment"; //to convert date format to MM DD YYYY
 export default function TvShowEpisodeForm(props) {
   if (!props.episodes) return "Loading";
   return (
-    <div className="episodeList">
+    <div className="Episode-list">
       <h2>Previous Episodes</h2>
       <div>
         {props.episodes && (
-          <table className="episodeTable">
+          <table className="Episode-table">
             <tbody>
               <tr>
+                <th>
+                  <h5>Season</h5>
+                </th>
                 <th>
                   <h5>Number</h5>
                 </th>
@@ -25,7 +28,8 @@ export default function TvShowEpisodeForm(props) {
               {props.episodes.map(episode => {
                 return (
                   <tr key={episode.id}>
-                    <td>{episode.number}</td>
+                    <td style={{textAlign: "center"}}>{episode.season}</td>
+                    <td style={{textAlign: "center"}}>{episode.number}</td>
                     <td>
                       <Link to={`/episodedetail/${episode.id}`}>
                         {episode.name}

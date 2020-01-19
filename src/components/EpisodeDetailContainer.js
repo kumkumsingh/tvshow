@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loadEpisode} from "../actions/TvShowActions";
+import { loadEpisode } from "../actions/TvShowActions";
 import EpisodeDetailForm from "./EpisodeDetailForm";
 
 //this container has the particular tvshow episode detail.
 class EpisodeDetailContainer extends Component {
- 
   componentDidMount() {
     //fetching episode id which is sent via url on click of every episode on tvshow page.
     const episodeId = this.props.match.params.id;
@@ -13,15 +12,12 @@ class EpisodeDetailContainer extends Component {
     // The functions definitions are written in actions/TvShowlActions file
     // Get the single episode details of particular TvShow
     this.props.loadEpisode(episodeId);
-
-  
-  
   }
 
   render() {
     return (
       <div>
-        <EpisodeDetailForm episode={this.props.episode}/>
+        <EpisodeDetailForm episode={this.props.episode} />
       </div>
     );
   }

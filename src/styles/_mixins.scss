@@ -4,9 +4,4 @@
   flex-direction: $direction;
   align-items: $alignItems;
 }
-@mixin backgroundColor($color) {
-  background-color: $color;
-}
-@mixin fontSize($fontSize) {
-  font-size: $fontSize;
-}
+

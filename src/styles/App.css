@@ -8,7 +8,7 @@ body {
   color: black;
 }
 
-.flex-container-episode-detail {
+.Flex-container-episode-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,46 +22,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+}
+
+.Flex-container-episode-detail article {
+  margin: 20px;
+  padding: 30px 30px;
+  background-color: #c6ceb2;
+  border-radius: 10px;
+  width: 50%;
 }
 
 h2 {
   text-align: center;
-}
-
-.homeList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-}
-
-.episodeList {
-  margin: 0% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 img {
@@ -69,24 +41,32 @@ img {
   border: 2px solid black;
 }
 
-.episodeTable {
+.Episode-table {
   border-collapse: collapse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.episodeTable td {
+.Episode-table td {
   font-size: medium;
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-.episodeTable tr {
+.Episode-table tr {
   height: 35px;
 }
 
-.episodeTable th {
+.Episode-table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.Episode-table tr:hover {
+  background-color: darkturquoise;
+}
+
+.Episode-table th {
   text-align: left;
   background-color: #3c948b;
   color: white;
@@ -95,15 +75,7 @@ img {
   padding: 8px;
 }
 
-.episodeTable tr:nth-child(even) {
-  background-color: #d5dfe0;
-}
-
-.episodeTable tr:hover {
-  background-color: #ddd;
-}
-
-.showDetail {
+.Show-detail {
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,16 +87,26 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.showDetail > img {
-  margin-right: 10px;
+.Show-detail img {
+  margin: 0px 10px 10px 0px;
+}
+
+.Show-detail article {
+  padding: 0px 30px;
+  background-color: #c6ceb2;
+  border-radius: 10px;
+  width: 75%;
 }
 
 @media only screen and (max-width: 720px) {
-  .showDetail {
+  .Show-detail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,9 +126,39 @@ img {
   }
 }
 
-@media only screen and (min-width: 720px) and (max-width: 960px) {
-  .flex-container-episode-detail {
-    font-size: 20px;
-  }
+.Home-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.Episode-list {
+  margin: 0% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=App.css.map */
