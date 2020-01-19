@@ -1,0 +1,29 @@
+body {
+  @include backgroundColor(lightyellow);
+}
+.App-header {
+  min-height: 100vh;
+  @include fontSize(calc(10px + 2vmin));
+  color: black;
+}
+.flex-container-episode-detail {
+  @include flexCenter(column, center, center);
+  margin: 10px;
+}
+
+h2 {
+  text-align: $textAlignCenter;
+}
+
+// applied border for all the images
+img {
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+@import "./episodeTable";
+@import "./showDetail";
+@import "./homeList";
+@import "./episodeList";
+@import "./mixins";
+@import "./variables";

@@ -1,14 +1,152 @@
-.App {
-  text-align: center;
+body {
+  background-color: lightyellow;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
+
+.flex-container-episode-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.homeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.episodeList {
+  margin: 0% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.episodeTable {
+  border-collapse: collapse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.episodeTable td {
+  font-size: medium;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.episodeTable tr {
+  height: 35px;
+}
+
+.episodeTable th {
+  text-align: left;
+  background-color: #3c948b;
+  color: white;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.episodeTable tr:nth-child(even) {
+  background-color: #d5dfe0;
+}
+
+.episodeTable tr:hover {
+  background-color: #ddd;
+}
+
+.showDetail {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.showDetail > img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  .showDetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 960px) {
+  .flex-container-episode-detail {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

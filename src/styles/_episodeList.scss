@@ -1,0 +1,6 @@
+//style for episode list for a particular show
+.episodeList {
+    margin: 0% 10%;
+    @include flexCenter(column, center, center);
+  }
+  @import './mixins';
