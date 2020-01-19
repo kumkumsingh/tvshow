@@ -1,0 +1,24 @@
+//style for particular show displayed in flex
+.Show-detail {
+  margin: 20px;
+  @include flexCenter(row, flex-start, flex-start);
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  img {
+    margin: 0px 10px 10px 0px;
+  }
+  article {
+    padding: 0px 30px;
+    background-color: rgb(198, 206, 178);
+    border-radius: round($number: 10px);
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .Show-detail {
+    @include flexCenter(row, flex-start, center);
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+}
+@import "./mixins";

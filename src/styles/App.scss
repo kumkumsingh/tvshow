@@ -1,0 +1,38 @@
+@import "./mixins";
+
+body {
+  background-color: (lightyellow);
+}
+
+.App-header {
+  min-height: 100vh;
+  font-size: (calc(10px + 2vmin));
+  color: black;
+}
+//style for single episode of a particular show
+.Flex-container-episode-detail {
+  @include flexCenter(column, center, center);
+
+  article {
+    margin: 20px;
+    padding: 30px 30px;
+    background-color: rgb(198, 206, 178);
+    border-radius: round($number: 10px);
+    width: 50%;    
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+// applied border for all the images
+img {
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+@import "./episodeTable";
+@import "./showDetail";
+@import "./homeList";
+@import "./episodeList";

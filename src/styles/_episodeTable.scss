@@ -1,0 +1,28 @@
+//style for episode list of particular show displayed in a table.
+.Episode-table {
+  border-collapse: collapse;
+  align-items: center;
+  td {
+    font-size: medium;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr {
+    height: 35px;
+    &:nth-child(even) {
+        background-color: lightgrey;
+      }
+    &:hover {
+      background-color: darkturquoise;
+    }
+  }
+  th {
+    text-align: left;
+    background-color: #3c948b;
+    color: white;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+}
+@import "./mixins";

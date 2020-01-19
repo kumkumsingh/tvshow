@@ -7,19 +7,24 @@ export default class Home extends Component {
     return (
       <div>
         <h2>List Of TVMaze show</h2>
-        <div className="homeList">
-          {shows.map(show => {
-            return (
-              <div key={show.id}>
-                <Link to={`/show/${show.id}/${show.name}`}>
-                  <figure>
-                    <img src={show.image} alt={"not available"} />
-                    <figcaption>{show.name}</figcaption>
-                  </figure>
-                </Link>
-              </div>
-            );
-          })}
+        <div className="Home-list">
+        {shows.map(show => {
+          return (
+            <div key={show.id}>
+              <Link to={`/show/${show.id}/${show.name}`}>
+                <figure>
+                  <img
+                    src={show.image}
+                    alt={"not available"}
+                  />
+                  <figcaption>
+                   {show.name}
+                  </figcaption>
+                </figure>
+              </Link>
+            </div>            
+          );
+        })}
         </div>
       </div>
     );
