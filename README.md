@@ -16,11 +16,15 @@ Episode detail page has the following data:
 Note:
 For some of the episodes , image or summary will not be available on episode detail page because its not there in API its self .
 
-How to set up:
+How to set up
 Clone this repository with
-https://github.com/kumkumsingh/tvshow.git
+
+git clone https://github.com/kumkumsingh/tvshow.git
 Cd into the folder you just cloned
+
 cd tvshow
+
 Install dependencies and run the app
+
 npm install
 npm run start
