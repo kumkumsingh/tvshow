@@ -26,5 +26,5 @@ cd tvshow
 
 Install dependencies and run the app
 
-npm install
+npm install and then
 npm run start
