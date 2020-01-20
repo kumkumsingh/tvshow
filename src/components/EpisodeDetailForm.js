@@ -11,15 +11,17 @@ export default function EpisodeDetailForm(props) {
           div.innerHTML = episodeDetail.summary;
           const summaryContent = div.innerText;
           return (
-            <div key={episodeDetail.id} className="Flex-container-episode-detail">
+            <div
+              key={episodeDetail.id}
+              className="Flex-container-episode-detail"
+            >
               <h2>Details:{episodeDetail.name}</h2>
               <img src={episodeDetail.image.medium} alt="Not available"></img>
               <article>{summaryContent}</article>
-             
             </div>
           );
         }
-        return 'Image , Summary not available';
+        return "Image , Summary not available";
       })}
     </div>
   );

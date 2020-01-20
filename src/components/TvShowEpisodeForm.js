@@ -28,8 +28,8 @@ export default function TvShowEpisodeForm(props) {
               {props.episodes.map(episode => {
                 return (
                   <tr key={episode.id}>
-                    <td style={{textAlign: "center"}}>{episode.season}</td>
-                    <td style={{textAlign: "center"}}>{episode.number}</td>
+                    <td style={{ textAlign: "center" }}>{episode.season}</td>
+                    <td style={{ textAlign: "center" }}>{episode.number}</td>
                     <td>
                       <Link to={`/episodedetail/${episode.id}`}>
                         {episode.name}

@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loadEpisodes } from "../actions/TvShowActions";//importing action for tvshow episodes
-import TvShowEpisodeForm from './TvShowEpisodeForm'
+import { loadEpisodes } from "../actions/TvShowActions"; //importing action for tvshow episodes
+import TvShowEpisodeForm from "./TvShowEpisodeForm";
 //this container has particular tv show episodes lists
 class TvShowEpisodeContainer extends Component {
-
-//componentDidMount the function which is processed first when the app is rendered
-// The functions definitions are written in actions/TvShowActions file
-// Get all the episodes of particular tvshow which clicked on home page.
+  //componentDidMount the function which is processed first when the app is rendered
+  // The functions definitions are written in actions/TvShowActions file
+  // Get all the episodes of particular tvshow which clicked on home page.
   componentDidMount() {
     const showId = this.props.match.params.id;
     this.props.loadEpisodes(showId);
   }
   render() {
-    return <div>
-    <TvShowEpisodeForm episodes={this.props.episodes}/>
-    </div>;
+    return (
+      <div>
+        <TvShowEpisodeForm episodes={this.props.episodes} />
+      </div>
+    );
   }
 }
 // The wrapper component that connects to the Redux store
@@ -28,5 +29,5 @@ const mapStateToProps = state => {
 };
 // connect the component TvShowEpisodeContainer with the actions loadEpisodes and mapStateToProps
 export default connect(mapStateToProps, { loadEpisodes })(
-    TvShowEpisodeContainer
+  TvShowEpisodeContainer
 );
