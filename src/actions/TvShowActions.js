@@ -33,8 +33,6 @@ export const loadEpisodes = showId => dispatch => {
 };
 //Dispatching an action for getting a single episode based on its id
 const episodeFetched = episodeId => {
-  console.log("inside episode fetched");
-  console.log("id", episodeId);
   //console.log("id", episodeId)
   return {
     type: EPISODE_FETCHED,
@@ -43,7 +41,6 @@ const episodeFetched = episodeId => {
 };
 
 export const loadEpisode = episodeId => (dispatch, getState) => {
-  console.log("inside load episode");
   return dispatch(episodeFetched(episodeId));
 };
 

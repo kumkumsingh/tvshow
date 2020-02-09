@@ -6,9 +6,8 @@ export default (state = [], action = {}) => {
     case EPISODES_FETCHED:
       return action.payload;
     case EPISODE_FETCHED:
-      return [
-        ...state.filter(episode => episode.id === parseInt(action.episodeId))
-      ];
+      return [ ...state.filter(episode => episode.id === parseInt(action.episodeId))]
+ 
 
     default:
       return state;
