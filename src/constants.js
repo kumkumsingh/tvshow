@@ -8,3 +8,5 @@ export const shows = [
     { id: 44321, name: "white-house-farm",image:"http://static.tvmaze.com/uploads/images/medium_portrait/234/586477.jpg" },
     { id: 45487, name: "king-gary",image:"http://static.tvmaze.com/uploads/images/medium_portrait/235/588171.jpg" }
   ];
+
+  export const url = "http://api.tvmaze.com"
