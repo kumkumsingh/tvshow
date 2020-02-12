@@ -18,6 +18,7 @@ const defaults = {
 
 export default store => next => action => {
   if (!action.apiCall) {
+      
     return next(action);
   }
 
