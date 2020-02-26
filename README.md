@@ -1,5 +1,17 @@
-#TV Maze Show
-##INTRO:
+# TV Show
+
+     A React,Redux application.
+
+
+# Table of Contents
+
+1. [Functionality](#Functionality)
+2. [How to run the aplication](#run)
+
+<a name="functionality"></a>
+
+# Functionality
+
 Tv maze show web app has Home page, which have list of 8 static shows . Home page contains image of the show and name of the show as the caption of the image . Onclick of either image of the show or the caption of the image , navigates it to that particular show detail page . 
 Each show detail page has following data :
 1. Title of the show 
@@ -13,10 +25,10 @@ Episode detail page has the following data:
 2. Image of the show
 3. Summary of the show 
 
-Note:
-For some of the episodes , image or summary will not be available on episode detail page because its not there in API its self .
+<a name="run"></a>
 
-#How to set up
+# How to run the aplication
+
 Clone this repository with
 
 git clone https://github.com/kumkumsingh/tvshow.git
